@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Example</title>
+			<script src="jquery.min.js"></script>
+			<script src="jquery.metalCheckAll.js"></script>
+			<style type="text/css">
+			.a{
+				border: 1px solid red;
+			}
+			</style>
+		</head>
+	<body>
+	<div class="a">
+		<input type="checkbox" class="checkAll">
+		<button type="button" class="btnCheckAll">Checkall</button>
+		<input type="submit" id="btnCheckAllSubmit" value="Checkall(submit)"></button>
+	</div>
+
+	<input type="checkbox" class="inputCheck" name="kk">
+	<input type="checkbox" class="inputCheck">
+	<input type="checkbox" class="inputCheck">
+	<input type="checkbox" class="inputCheck">
+	<input type="checkbox" class="inputCheck">
+	<input type="checkbox" class="inputCheck">
+	<input type="checkbox" class="inputCheck">
+	<input type="checkbox" class="inputCheck">
+
+<hr/>
+	<input type="checkbox" class="inputCheck1">
+	<input type="checkbox" class="inputCheck1">
+	<input type="checkbox" class="inputCheck1">
+
+	<script>
+	$(function(){
+		$('.checkAll').metalCheckAll({
+			target : ['.inputCheck']
+		});
+
+		$('.btnCheckAll').metalCheckAll({
+			target : ['input[name=kk]']
+		});
+
+		$('input[type="submit"]').metalCheckAll({
+			target : ['.inputCheck1']
+		});
+	});
+	</script>
+	</body>
+	</html>
