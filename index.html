@@ -5,16 +5,18 @@
 			<script src="jquery.min.js"></script>
 			<script src="jquery.metalCheckAll.js"></script>
 			<style type="text/css">
-			.a{
+			.container{
 				border: 1px solid red;
+				padding : 5px;
 			}
 			</style>
 		</head>
 	<body>
-	<div class="a">
+	<div class="container">
+		<span>Click on these two element to see the action.</span>
 		<input type="checkbox" class="checkAll">
 		<button type="button" class="btnCheckAll">Checkall</button>
-		<input type="submit" id="btnCheckAllSubmit" value="Checkall(submit)"></button>
+		
 	</div>
 
 	<input type="checkbox" class="inputCheck" name="kk">
@@ -38,12 +40,10 @@
 		});
 
 		$('.btnCheckAll').metalCheckAll({
-			target : ['input[name=kk]']
-		});
-
-		$('input[type="submit"]').metalCheckAll({
 			target : ['.inputCheck1']
 		});
+
+		
 	});
 	</script>
 	</body>
