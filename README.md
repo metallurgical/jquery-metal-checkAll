@@ -61,29 +61,29 @@ Configurations available for this plugin :
          
 		
 ``` html
-<!-- **HTML** -->
-<input type="checkbox" class="inputCheck">
-<input type="checkbox" class="inputCheck">
-<input type="checkbox" class="inputCheck">
+		<!-- **HTML** -->
+		<input type="checkbox" class="inputCheck">
+		<input type="checkbox" class="inputCheck">
+		<input type="checkbox" class="inputCheck">
 ```
 ``` javascript	
-//**JS**
-$('#checkAll_example1').metalCheckAll({
-    target : ['.inputCheck']
- });
+		//**JS**
+		$('#checkAll_example1').metalCheckAll({
+    		target : ['.inputCheck']
+ 		});
 ```
 		
 		
 **2.	Example 2 - Using checkbox and select by element name.**
 
 ``` html
-<!-- **HTML** -->
+		<!-- **HTML** -->
 		<input type="checkbox" name="example2">
     	<input type="checkbox" name="example2">
     	<input type="checkbox" name="example2">
 ```
 ``` javascript	
-//**JS**
+		//**JS**
 		$('#checkAll_example2').metalCheckAll({
 			target : ['input[name=example2]']
 		});
@@ -91,45 +91,53 @@ $('#checkAll_example1').metalCheckAll({
 
 **3.	Example 3 - Using checkbox and select by ID name.**
 
-		**HTML**
+``` html
+		<!-- **HTML** -->
     	<input type="checkbox" name="example3" id="example3">
-    
-		**JS**
+```
+``` javascript	
+		//**JS**
     	$('#checkAll_example3').metalCheckAll({
 			target : ['#example3']
 		});
+```
 
 **4.	Example 4 - Using Button and select by class name.**
 
-		**HTML**
+``` html
+		<!-- **HTML** -->
     	<input type="checkbox" class="example4">
     	<input type="checkbox" class="example4">
     	<input type="checkbox" class="example4">
-    
-		**JS**
+```
+``` javascript
     	$('#checkAll_example4').metalCheckAll({
     		target : ['.example4'],
     		btnValueChecked : 'Click ME', // Button Text before check
     		btnValueUnChecked : 'UnCheck Me' // Button text after check
     	});
+```
 
 **5.	Example 5 - Using Button and select by input type checkbox(this will find all checkbox on page).**
 
-    	**HTML**
+``` html
+		<!-- **HTML** -->
     	<input type="checkbox">
     	<input type="checkbox">
     	<input type="checkbox">	
-    
-    	**JS**
+```
+``` javascript
     	$('#checkAll_example5').metalCheckAll({
     		target : ['input[type=checkbox]'],
     		btnValueChecked : 'Click ME', // Button Text before check
     		btnValueUnChecked : 'UnCheck Me' // Button text after check
     	});
+```
 
 **6.	Example 6 - Using Button and select by multiple selector.**
 
-		**HTML**
+``` html
+		<!-- **HTML** -->
 		<div class="container_body">
 			<input type="checkbox" name="a">
 			<input type="checkbox" name="a">
@@ -145,13 +153,14 @@ $('#checkAll_example1').metalCheckAll({
 			<input type="checkbox" data-type="example6">
 			<input type="checkbox" data-type="example6">			
 		</div>
-
-		**JS**
+```
+``` javascript
 		$('#checkAll_example6').metalCheckAll({
 			target : ['input[name=a]','.example6','#example6','input[data-type="example6"]'], // arrays value
 			btnValueChecked : 'Click ME', // Button Text before check
 			btnValueUnChecked : 'UnCheck Me' // Button text after check
 		});
+```
 
 # Dependencies #
 -	Jquery Library either minified or development.
