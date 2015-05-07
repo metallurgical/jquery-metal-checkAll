@@ -21,7 +21,7 @@ Simple plugin to check or uncheck **Checkbox** using multiple selector at once.
 
 
 
-ad
+-	[**V1.0.0**](https://github.com/metallurgical/jquery-metal-checkAll/archive/v1.0.0.zip "V1.0.0")
 
 
 
