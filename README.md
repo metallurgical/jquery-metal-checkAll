@@ -68,6 +68,7 @@ Configurations available for this plugin :
 ```
 ``` javascript	
 		//**JS**
+		// This selector applied for checkbox with id name checkAll_example1
 		$('#checkAll_example1').metalCheckAll({
     		target : ['.inputCheck']
  		});
@@ -84,6 +85,7 @@ Configurations available for this plugin :
 ```
 ``` javascript	
 		//**JS**
+		// This selector applied for checkbox with id name checkAll_example2
 		$('#checkAll_example2').metalCheckAll({
 			target : ['input[name=example2]']
 		});
@@ -97,6 +99,7 @@ Configurations available for this plugin :
 ```
 ``` javascript	
 		//**JS**
+		// This selector applied for checkbox with id name checkAll_example3
     	$('#checkAll_example3').metalCheckAll({
 			target : ['#example3']
 		});
@@ -111,6 +114,8 @@ Configurations available for this plugin :
     	<input type="checkbox" class="example4">
 ```
 ``` javascript
+		//**JS**
+		// This selector applied for button with id name checkAll_example4
     	$('#checkAll_example4').metalCheckAll({
     		target : ['.example4'],
     		btnValueChecked : 'Click ME', // Button Text before check
@@ -127,6 +132,8 @@ Configurations available for this plugin :
     	<input type="checkbox">	
 ```
 ``` javascript
+		//**JS**
+		// This selector applied for button with id name checkAll_example5
     	$('#checkAll_example5').metalCheckAll({
     		target : ['input[type=checkbox]'],
     		btnValueChecked : 'Click ME', // Button Text before check
@@ -155,6 +162,8 @@ Configurations available for this plugin :
 		</div>
 ```
 ``` javascript
+		//**JS**
+		// This selector applied for button with id name #checkAll_example6 
 		$('#checkAll_example6').metalCheckAll({
 			target : ['input[name=a]','.example6','#example6','input[data-type="example6"]'], // arrays value
 			btnValueChecked : 'Click ME', // Button Text before check
