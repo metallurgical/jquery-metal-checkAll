@@ -59,18 +59,19 @@ Configurations available for this plugin :
 **1. Example 1 - Using checkbox and select by class name.**
 
          
-		**HTML**		
-		<input type="checkbox" class="inputCheck">
-    	<input type="checkbox" class="inputCheck">
-    	<input type="checkbox" class="inputCheck">
-    	
-		**JS**	
-
-		```javascript	
-    	$('#checkAll_example1').metalCheckAll({
-    		target : ['.inputCheck']
-    	});
-		```
+		
+``` html
+<!-- **HTML** -->
+<input type="checkbox" class="inputCheck">
+<input type="checkbox" class="inputCheck">
+<input type="checkbox" class="inputCheck">
+```
+``` javascript	
+//**JS**
+$('#checkAll_example1').metalCheckAll({
+    target : ['.inputCheck']
+ });
+```
 		
 		
 **2.	Example 2 - Using checkbox and select by element name.**
