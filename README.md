@@ -55,7 +55,7 @@ Configurations available for this plugin :
 
 # Basic Usage #
 
-----------
+
 **1. Example 1 - Using checkbox and select by class name.**
 
          
