@@ -76,15 +76,18 @@ $('#checkAll_example1').metalCheckAll({
 		
 **2.	Example 2 - Using checkbox and select by element name.**
 
-        **HTML**
+``` html
+<!-- **HTML** -->
 		<input type="checkbox" name="example2">
     	<input type="checkbox" name="example2">
     	<input type="checkbox" name="example2">
-
-		**JS**
+```
+``` javascript	
+//**JS**
 		$('#checkAll_example2').metalCheckAll({
 			target : ['input[name=example2]']
 		});
+```
 
 **3.	Example 3 - Using checkbox and select by ID name.**
 
