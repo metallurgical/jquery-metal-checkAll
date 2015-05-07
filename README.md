@@ -1,13 +1,13 @@
 # Jquery metalCheckAll Plugin
 
-----------
+
 
 Simple plugin to check or uncheck **Checkbox** using multiple selector at once. 
 
 
 # Features #
 
-----------
+
 
 - Easy to implement together with HTML markup.
 - Select the checkbox with single selector.
@@ -19,7 +19,7 @@ Simple plugin to check or uncheck **Checkbox** using multiple selector at once.
 
 # Current Stable #
 
-----------
+
 
 ad
 
@@ -27,7 +27,7 @@ ad
 
 # How To Install #
 
-----------
+
 
 Installation is so very easy. Download the current stable and see the example in Demo page. Here is the manual step to follow :
 
@@ -37,7 +37,7 @@ Installation is so very easy. Download the current stable and see the example in
 
 # Available Options #
 
-----------
+
 
 Configurations available for this plugin :
 
@@ -56,18 +56,98 @@ Configurations available for this plugin :
 # Basic Usage #
 
 ----------
-1. Example 1
+**1. Example 1 - Using checkbox and select by class name.**
 
-        ```javascript 
+         
 		**HTML**		
 		<input type="checkbox" class="inputCheck">
     	<input type="checkbox" class="inputCheck">
     	<input type="checkbox" class="inputCheck">
     	
-		**JS**
-		$(function(){
-    		$('#checkAll_example1').metalCheckAll({
-    			target : ['.inputCheck']
-    		});
-		});
+		**JS**	
+
+		```javascript	
+    	$('#checkAll_example1').metalCheckAll({
+    		target : ['.inputCheck']
+    	});
 		```
+		
+		
+**2.	Example 2 - Using checkbox and select by element name.**
+
+        **HTML**
+		<input type="checkbox" name="example2">
+    	<input type="checkbox" name="example2">
+    	<input type="checkbox" name="example2">
+
+		**JS**
+		$('#checkAll_example2').metalCheckAll({
+			target : ['input[name=example2]']
+		});
+
+**3.	Example 3 - Using checkbox and select by ID name.**
+
+		**HTML**
+    	<input type="checkbox" name="example3" id="example3">
+    
+		**JS**
+    	$('#checkAll_example3').metalCheckAll({
+			target : ['#example3']
+		});
+
+**4.	Example 4 - Using Button and select by class name.**
+
+		**HTML**
+    	<input type="checkbox" class="example4">
+    	<input type="checkbox" class="example4">
+    	<input type="checkbox" class="example4">
+    
+		**JS**
+    	$('#checkAll_example4').metalCheckAll({
+    		target : ['.example4'],
+    		btnValueChecked : 'Click ME', // Button Text before check
+    		btnValueUnChecked : 'UnCheck Me' // Button text after check
+    	});
+
+**5.	Example 5 - Using Button and select by input type checkbox(this will find all checkbox on page).**
+
+    	**HTML**
+    	<input type="checkbox">
+    	<input type="checkbox">
+    	<input type="checkbox">	
+    
+    	**JS**
+    	$('#checkAll_example5').metalCheckAll({
+    		target : ['input[type=checkbox]'],
+    		btnValueChecked : 'Click ME', // Button Text before check
+    		btnValueUnChecked : 'UnCheck Me' // Button text after check
+    	});
+
+**6.	Example 6 - Using Button and select by multiple selector.**
+
+		**HTML**
+		<div class="container_body">
+			<input type="checkbox" name="a">
+			<input type="checkbox" name="a">
+			<input type="checkbox" name="a">			
+		</div>
+		<div class="container_body">
+			<input type="checkbox" class="example6">
+			<input type="checkbox" class="example6">
+			<input type="checkbox" class="example6">			
+		</div>
+		<div class="container_body">
+			<input type="checkbox" id="example6">
+			<input type="checkbox" data-type="example6">
+			<input type="checkbox" data-type="example6">			
+		</div>
+
+		**JS**
+		$('#checkAll_example6').metalCheckAll({
+			target : ['input[name=a]','.example6','#example6','input[data-type="example6"]'], // arrays value
+			btnValueChecked : 'Click ME', // Button Text before check
+			btnValueUnChecked : 'UnCheck Me' // Button text after check
+		});
+
+# Dependencies #
+-	Jquery Library either minified or development.
