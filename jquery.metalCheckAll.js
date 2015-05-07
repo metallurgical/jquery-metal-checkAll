@@ -9,7 +9,7 @@
  |             and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
  | @copyright  (c) 2015 Norlihazmey(metallurgical)
  | @version    1.0.0
- | @Github 	   https://github.com/metallurgical
+ | @Github 	   https://github.com/metallurgical/jquery-metal-checkAll
  |===================================================================*/
 (function($){
 
