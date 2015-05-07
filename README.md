@@ -58,7 +58,8 @@ Configurations available for this plugin :
 ----------
 1. Example 1
 
-        ```javascript **HTML**		
+        ```javascript 
+		**HTML**		
 		<input type="checkbox" class="inputCheck">
     	<input type="checkbox" class="inputCheck">
     	<input type="checkbox" class="inputCheck">
