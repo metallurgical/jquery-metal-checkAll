@@ -170,6 +170,8 @@ Configurations available for this plugin :
 			btnValueUnChecked : 'UnCheck Me' // Button text after check
 		});
 ```
+# Demo Page #
+-	**[Click ME](http://metallurgical.github.io/metalCheckAll/ "Metal Clone Demo Page")**
 
 # Dependencies #
 -	Jquery Library either minified or development.
