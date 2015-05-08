@@ -1,0 +1,19 @@
+{
+  "name": "metalClone",
+  "version": "1.0.0",
+  "description": "jQuery plugin checkAll",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-concat": "^2.5.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-uglify": "^1.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hello"
+  ],
+  "author": "norlihazmey@metallurgical",
+  "license": "MIT"
+}

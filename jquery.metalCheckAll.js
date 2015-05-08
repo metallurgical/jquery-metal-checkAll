@@ -29,7 +29,7 @@
 			// the default value of button
 			// to opt.btnValueChecked
 			if ((typeSelector == "button" || typeSelector == "submit") && nodeName == "BUTTON") 
-				mainSelector.text(opt.btnValueChecked) 
+				mainSelector.text(opt.btnValueChecked);
 			else if ((typeSelector == "button" || typeSelector == "submit") && nodeName == "INPUT") 
 				mainSelector.val(opt.btnValueChecked); 
 
@@ -70,7 +70,7 @@
 					if (elem.attr('data-metal-check')){
 						unCheckAll(elementToCheck);
 						if ((typeSelector == "button" || typeSelector == "submit") && nodeName == "BUTTON") 
-							elem.removeAttr('data-metal-check').text(opt.btnValueChecked) // type button
+							elem.removeAttr('data-metal-check').text(opt.btnValueChecked); // type button
 						else if ((typeSelector == "button" || typeSelector == "submit") && nodeName == "INPUT") 
 							elem.removeAttr('data-metal-check').val(opt.btnValueChecked);	// type submit 
 
@@ -79,7 +79,7 @@
 					else {
 						checkAll(elementToCheck);
 						if ((typeSelector == "button" || typeSelector == "submit") && nodeName == "BUTTON") 
-							elem.attr('data-metal-check', 'true').text(opt.btnValueUnChecked) // type button
+							elem.attr('data-metal-check', 'true').text(opt.btnValueUnChecked); // type button
 						else if ((typeSelector == "button" || typeSelector == "submit") && nodeName == "INPUT") 
 							elem.attr('data-metal-check', 'true').val(opt.btnValueUnChecked); // type submit
 						
