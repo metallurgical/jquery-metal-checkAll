@@ -31,8 +31,8 @@ Simple plugin to check or uncheck **Checkbox** using multiple selector at once.
 
 Installation is so very easy. Download the current stable and see the example in Demo page. Here is the manual step to follow :
 
-1. Put `<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>` inside Head Section(using latest version).
-2. Place `<script src="jquery.metalCheckAll.js"></script>` after jQuery library.
+1. Put `<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>` inside Head Section(**recommended using latest version**).
+2. Place `<script src="jquery.metalCheckAll.min.js"></script>` after jQuery library.
 3. Done!!
 
 # Available Options #
